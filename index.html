@@ -208,7 +208,7 @@ footer{text-align:center;color:var(--muted);font-size:.8rem}
   </section>
   </main>
 
-  <footer>Momo Cafe · لحظة كيف</footer>
+  <footer>Momo Cafe · لحظة كيف<div data-t="credit" style="margin-top:4px"></div></footer>
 </div>
 <div class="toast" id="toast" hidden></div>
 
@@ -230,7 +230,7 @@ import { getFirestore, collection, doc, addDoc, setDoc, updateDoc, deleteDoc, on
 
 /* ---------- translations ---------- */
 const T = {
- ar:{ title:"مخزون المجمدات", subtitle:"دجاج، لحم بقري، لحم ماعز وشاورما — استلام وصرف بنظام ما ينتهي أولاً يُصرف أولاً.", temp:"يُحفظ عند ≤ ‎−18 °C", langBtn:"English",
+ ar:{ credit:"تم التصميم بواسطة أبو كريم", title:"مخزون المجمدات", subtitle:"دجاج، لحم بقري، لحم ماعز وشاورما — استلام وصرف بنظام ما ينتهي أولاً يُصرف أولاً.", temp:"يُحفظ عند ≤ ‎−18 °C", langBtn:"English",
   logout:"تسجيل الخروج", loginTitle:"تسجيل الدخول", loginHint:"استخدم حساب الموظف المسجل في النظام.", email:"البريد الإلكتروني", password:"كلمة المرور", signIn:"دخول",
   tabStock:"المخزون", tabIn:"استلام", tabOut:"صرف", tabHistory:"السجل", tabItems:"الأصناف",
   sItems:"الأصناف", sKg:"إجمالي المخزون (كجم)", sLow:"مخزون منخفض", sExp:"ينتهي خلال ٧ أيام",
@@ -251,7 +251,7 @@ const T = {
   tReceived:"تم الاستلام", tIssued:"تم الصرف", tRemoved:"تم حذف الحركة وإعادة احتساب المخزون", tAdded:"تمت الإضافة", tSaved:"تم الحفظ", tItemDel:"تم حذف الصنف",
   noConfig:"لم يتم ربط Firebase بعد. أضف إعدادات المشروع في أعلى ملف index.html.", liveLost:"انقطع التحديث المباشر. أعد تحميل الصفحة."
  },
- en:{ title:"Frozen Stock Room", subtitle:"Chicken, beef, goat and shawarma — stock in, stock out, first-expiry-first-out.", temp:"STORE AT ≤ −18 °C", langBtn:"عربي",
+ en:{ credit:"Designed by Abu Karim", title:"Frozen Stock Room", subtitle:"Chicken, beef, goat and shawarma — stock in, stock out, first-expiry-first-out.", temp:"STORE AT ≤ −18 °C", langBtn:"عربي",
   logout:"Sign out", loginTitle:"Sign in", loginHint:"Use the staff account set up for this system.", email:"Email", password:"Password", signIn:"Sign in",
   tabStock:"Stock", tabIn:"Receive", tabOut:"Issue", tabHistory:"History", tabItems:"Items",
   sItems:"Items", sKg:"Total on hand (kg)", sLow:"Low stock", sExp:"Expiring ≤ 7 days",
